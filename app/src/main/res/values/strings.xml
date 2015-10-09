@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SampleList</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="add_row">Add Row</string>
+    <string name="clear_all_rows">Clear All Rows</string>
+</resources>
