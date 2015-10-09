@@ -28,10 +28,15 @@ public class forecastListAdapter extends ArrayAdapter<String> {
 
     public View getView(int pos, View convertView, ViewGroup parent) {
 
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View listItemView = inflater.inflate(R.layout.list_item_forecast, null);
+        View listItemView;
+        listItemView = convertView;
 
         Log.d(TAG, "getView called with pos " + pos);
+        if(listItemView == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+            listItemView = inflater.inflate(R.layout.list_item_forecast, null);
+            Log.d(TAG, "Allocating View at pos " + pos);
+        }
 
         TextView tv = (TextView) listItemView.findViewById(R.id.list_item_forecast_textView);
         tv.setText(forecastData.get(pos));
