@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">SampleList</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="add_row">Add Row</string>
     <string name="clear_all_rows">Clear All Rows</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
 </resources>

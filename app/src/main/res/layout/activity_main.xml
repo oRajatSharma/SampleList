@@ -1,14 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     tools:context=".MainActivity">
+     tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:id="@+id/drawable_anim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/shared_image"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:transitionName="SharedImageView"
+        android:src="@drawable/sunny_happy_day"
+        android:layout_gravity="right"
+        />
 
     <ListView  xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listview_forecast"
-        android:hapticFeedbackEnabled="true"/>
+        android:hapticFeedbackEnabled="true"
+        android:animateLayoutChanges="true"
+        />
 
-</FrameLayout>
+
+</LinearLayout>

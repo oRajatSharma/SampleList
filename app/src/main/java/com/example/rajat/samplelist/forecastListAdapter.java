@@ -42,7 +42,7 @@ public class forecastListAdapter extends ArrayAdapter<String> {
         tv.setText(forecastData.get(pos));
 
         ImageView iv = (ImageView) listItemView.findViewById(R.id.list_item_forecast_imageView);
-        iv.setImageResource(R.drawable.ic_action_name);
+        iv.setImageResource(R.drawable.sunny_happy_day);
         return listItemView;
     }
 }

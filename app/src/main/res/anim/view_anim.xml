@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:duration="5000"
+    >
+
+    <rotate android:fromDegrees="0"
+        android:toDegrees="180"
+        android:pivotX="50%"
+        android:pivotY="50%">
+
+    </rotate>
+
+    <alpha android:fromAlpha="1.0"
+        android:toAlpha="0.2">
+
+    </alpha>
+
+    <!-- you can only change alpha, position, rotation, size -->
+
+</set>

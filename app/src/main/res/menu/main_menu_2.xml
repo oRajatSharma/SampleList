@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Main2Activity">
+    <item android:id="@+id/value_animator" android:title="value animator"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/object_animator" android:title="object animator"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/view_property_animator" android:title="view property animator"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
